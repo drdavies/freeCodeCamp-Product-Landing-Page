@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffbb6a;
+}
+
+.container {
+    width: 100%;
+    margin:auto;
+    background-color: bisque;
+
+}
+
+#header {    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#nav-bar {
+    border: solid 1px;
+    overflow: hidden;
+    list-style-type: none; /*removes bullet points from nav*/
+    background-color: grey;
+    position: fixed; /*nav stays on top of page*/
+    }
+
+li {
+    float: left; /*nav list horizontally, not vertically*/
+}
+
+li a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;  
+    display: inline-block;
+}
+
+li a:hover {
+    background-color: black;
+}
+
+#company-logo {
+    margin-top: 50px;
+    
+} 
+
+#company-title {
+    padding: 50px 0;
+    vertical-align: middle;
+    margin-top: 50px;
+}
+
+
+
+#about {
+    margin: auto;
+}
+
+h3, h4{
+    text-align: center;
+}
+
+p {
+    padding: 10px;
+}
+
+#our-coffee {
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .coffee-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 33%; /*I have 3 boxes so each one is a third*/
+  margin: 5px;
+  border: 1px solid;
+}
+.coffee-name { /*title of coffee*/
+    background-color: #e2e2e2;
+    width: 100%; /*takes up the whole box width*/
+    padding: 15px 0;
+  }
+
+ .button{
+    background-color: #9A0794;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 25px;
+    display: block; /*centers the button*/
+} 
+
+.button:hover{
+    background-color: red;
+}
+
+#social-media-img{
+    height: 100px;
+    padding: 50px;
+
+}
+
+#social-media-section {
+    display: flex;
+    justify-content: center;
+}
+
+#video-section{
+    display: flex;
+    justify-content: center;
+}
+
+#video-description{
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    }
+
+/*change font size if screen size is less than 600px*/
+  @media only screen and (max-width: 600px) {
+    div.container {
+      font-size: 14px;
+    }
+  }
+  
